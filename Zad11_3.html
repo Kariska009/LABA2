@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Запрос минимального и максимального значений диапазона от пользователя
+        var minRange = parseInt(prompt("Введите минимальное значение диапазона:"));
+        var maxRange = parseInt(prompt("Введите максимальное значение диапазона:"));
+        var sum = 0;
+
+        // Проверка на корректность введенных данных
+        if (!isNaN(minRange) && !isNaN(maxRange)) {
+            // Подсчет суммы чисел в указанном диапазоне с использованием цикла for
+            for (var i = minRange; i <= maxRange; i++) {
+                sum += i;
+            }
+            alert("Сумма чисел в заданном диапазоне: " + sum);
+        } else {
+            alert("Введите корректные значения для диапазона.");
+        }
+
+
+    </script>
+</body>
+
+</html>

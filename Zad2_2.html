@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Запрос возраста пользователя
+        var age = prompt("Пожалуйста, введите ваш возраст:");
+
+        // Проверка корректности введенных данных
+        if (isNaN(age)) {
+            alert("Пожалуйста, введите числовое значение для возраста.");
+        } else {
+            age = parseInt(age); // Преобразование строки в число
+
+            if (age >= 0 && age <= 120) {
+                alert("Ваш возраст корректен: " + age + " лет.");
+            } else {
+                alert("Пожалуйста, введите корректный возраст от 0 до 120 лет.");
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

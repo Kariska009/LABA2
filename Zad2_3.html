@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Запрос числа от пользователя
+        var userInput = parseInt(prompt("Введите число:"));
+
+        // Проверка на корректность введенных данных
+        if (!isNaN(userInput)) {
+            // Инициализация переменной для хранения текущего числа
+            var currentNumber = userInput;
+
+            // Вывод чисел от введенного до 0 с использованием цикла while
+            while (currentNumber >= 0) {
+                alert(currentNumber);
+                currentNumber--;
+            }
+        } else {
+            alert("Вы ввели некорректное число.");
+        }
+    </script>
+</body>
+
+</html>

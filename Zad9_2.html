@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Запрос числа от пользователя
+        var number = parseInt(prompt("Введите число:"));
+
+        // Проверка, кратно ли число 5, с использованием тернарного оператора
+        var isMultipleOf5 = (number % 5 == 0) ? true : false;
+
+        // Вывод результата
+        /*if (number == 0) {
+            alert(number + " не кратно 5.");
+        }*/
+        if (isMultipleOf5) {
+            alert(number + " кратно 5.");
+        } else {
+            alert(number + " не кратно 5.");
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
